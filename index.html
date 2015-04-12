@@ -18,39 +18,41 @@
     <!-- <><><><><>><><><><>><> -->
     <section>
     <p class="headerParagraphs">Select an option from the dropdown menu.</p>
-    <select id="sectionDropdown">
-            <option id="none"></option>
-            <option id="customerList"> Customer List </option>
-            <option id="orderHistory"> Order History </option>
-            <option id="customerDetail"> Customer Detail </option>
-    </select>
+        <select id="sectionDropdown">
+                <option id="none"></option>
+                <option id="customerListOpt" name="customerList"> Customer List </option>
+                <option id="orderHistoryOpt" name="orderHistory"> Order History </option>
+                <option id="customerDetailOpt" name="customerDetail"> Customer Detail </option>
+        </select>
     </section>
     
     <!-- Section 1 - Customer List -->
-    <section id="customerList" class="sectionClass">
-        <div id="customerListWrap" class="customerTableWrap">
-        </div>
+    <section id="customerListSection" name="customerList" class="sectionClass">
     </section>
     
     <!-- Section 2 - Order History, User Input -->
-    <section id="orderHistory" class="sectionClass">
-        <p id="orderHistPara" class="headerParagraphs">Please enter Customer Id to View Order History</p>
-        <table id="userInputTbl" class="inputTable">
-            <tr>
-                <td>
-                    <label for="customerId">Customer Id</label>
-                </td>
-                <td>
-                    <input id="customerId" type="text" class="inputText">
-                </td>
-            </tr>
-        </table>
-        <div id="buttonWrap" class="buttonWrap">
-            <span id="inputBntSpan" class="inputBntSpan">
-                <button id="clearBtn"> CLEAR </button>
-                <button id="submitBtn"> SUBMIT </button>
-            </span>
-        </div>
+    <section id="orderHistorySection" name="orderHistory" class="sectionClass">
+        <section id="inputTableWrap">
+            <p id="orderHistPara" class="headerParagraphs">Please enter Customer Id to View Order History</p>
+            <table id="userInputTbl" class="inputTable">
+                <tr>
+                    <td>
+                        <label for="customerIdLabel">Customer Id</label>
+                    </td>
+                    <td>
+                        <input id="customerIdInput" type="text" class="inputText">
+                    </td>
+                </tr>
+            </table>
+            <div id="buttonWrap" class="buttonWrap">
+                <span id="inputBntSpan" class="inputBntSpan">
+                    <button id="clearBtn"> CLEAR </button>
+                    <button id="submitBtn"> SUBMIT </button>
+                </span>
+            </div>
+        </section>
+        <section id="orderHistoryTableWrap" style="display: none">
+        </section>
     </section>
 
 </body>
