@@ -50,6 +50,7 @@ select{
     max-height: 100%;
     margin-top: 30px;
     padding: 0px;
+    display: none;
 }
 .headerParagraphs{
     position: relative;
@@ -106,38 +107,35 @@ button:hover{
 button:active{
     border: inset;
 }
-.loanTableWrap{
-    border: 2px solid #4D81BD;
-    border-radius: 5px;
-    top: 60px;
+.customerTableWrap{
+    border-top: 1px solid #3B3738;
+    border-bottom: 1px solid #3B3738;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 1100px;
+    max-width: 100%;
     box-shadow: 3px 5px 8px #888888;
     position: relative;
     color: #413E4A;
-    display: none;
+    display: block;
 }
-.loanTable{
+.customerTable{
     width: 100%;
-    border-left: hidden;
-    border-right: hidden;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
 }
-.loanTable_header{
+.customerTable_header{
     border: 1px solid #3B3738;
     background-color: #4D81BD;
     color: #FFF;
     text-align: center;
     font-weight: bold;
-    font-size: 1.2em;
-    padding: 8px;
+    font-size: 1.1em;
+    padding: 7px;
 }
-.loanTable_tbody td{
+.customerTable_tbody td{
     border: 1px solid #3B3738;
     border-collapse: collapse;
     background-color: #D7E9F7;
