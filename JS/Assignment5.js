@@ -239,7 +239,7 @@ $(document).ready(function(){
             $(shipAddCell).text(result.GetOrdersForCustomerResult[i].ShipAddress);
             $(shipCityCell).text(result.GetOrdersForCustomerResult[i].ShipCity);
             $(shipNameCell).text(result.GetOrdersForCustomerResult[i].ShipName);
-            $(shipPostCell).text(result.GetOrdersForCustomerResult[i].ShipPostCode);
+            $(shipPostCell).text(result.GetOrdersForCustomerResult[i].ShipPostcode);
             $(shipDateCell).text(result.GetOrdersForCustomerResult[i].ShippedDate);
         }
         
