@@ -39,6 +39,18 @@ $(document).ready(function(){
                 $("#orderHistorySection").hide();
                 $("#customerListSection").hide();
                 $("#customerDetailSection").hide();
+                var tblCheck = document.getElementById("customerTable");
+                if (tblCheck != null) {
+                    console.log("table exists on none");
+                    console.log("killing the table");
+                    document.getElementById("customerTable").parentNode.removeChild(tblCheck);
+                    if ($("#customerDetailTableWrap").css("display") == "none"){
+                        $("#customerDetailTableWrap").show();
+                    }
+                    else if ($("#inputTableWrap").css("display") == "none") {
+                        $("#inputTableWrap").show();
+                    }
+                }
             }
         }
     });
